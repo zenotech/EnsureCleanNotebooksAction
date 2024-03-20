@@ -3,7 +3,7 @@ const fs = require('fs');
 function lint(filename, disabled = []) {
 
     const json = JSON.parse(fs.readFileSync(filename, 'utf8'));
-    console.log(`Processing ${filename}');
+    console.log(`Processing ${filename}`);
 
     let fail_outputs = false;
     let fail_execution_count = false;
