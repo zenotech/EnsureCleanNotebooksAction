@@ -847,6 +847,7 @@ const fs = __webpack_require__(747);
 function lint(filename, disabled = []) {
 
     const json = JSON.parse(fs.readFileSync(filename, 'utf8'));
+    console.log(filename);
 
     let fail_outputs = false;
     let fail_execution_count = false;
